@@ -26,7 +26,8 @@ class String
     end
   end
 
-# .reject , rejects strings without the chars or if it's an empty string and iterates over each one
+# .reject , rejects strings without the chars or if it's an empty string
+# and iterates over each one
   def count_sentences
      array = self.split(/[.?!]/).reject {|str| str.empty?}
      array.size
